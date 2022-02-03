@@ -1,0 +1,151 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="cssvoorgevorderden.css" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Krub&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
+  <title>Serving Students</title>
+</head>
+<body>
+
+  <div class="hoofdplaatje">
+    <div class="overlay">
+    <div class="text">Welcome to Serving Students</div>
+
+</div>
+
+
+<div id="Sidemenu" class="sidenav">
+  <a href="index.html#place" id="home">Home</a>
+  <a href="about.html#info2" id="about">About</a>
+  <a href="project.html#info" id="projects">Projects</a>
+  <a href="contact.html#bottom" id="contact">Contact</a>
+  <a href="new.html" id="pictures">Pictures</a>
+
+</div>
+
+
+  <div id="container">
+    <div id="main"></div>
+
+    <div id="linkerkolom1"><img src="wolf.png" alt="h" ></div>
+    <div id="linkerkolom2"><img src="beach.jpg" alt="h"></div>
+    <div id="centrum1"><img src="cactus.jpg" alt="h" ></div>
+    <div id="centrum2"><img src="manhattan.jpg" alt="h" ></div>
+
+  </div>
+
+
+
+
+
+<div id="flexbox">
+  <article class="content">
+
+    <div  id="bottom"><h1>Contact</h1><p1> In order to contact me, you must be 10 or older, please submit your age
+</p1></div>
+
+
+
+<input id="numb">
+
+<button class="form2" type="button"  STYLE="color: white; background-color: 2a2f4a ;   border-style: none;
+      font-family: 'Didact Gothic', sans-serif;
+font-size: 15px;"onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+    <script>
+  function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x <  10) {
+      text = "Your not old enough, please ask your parents";
+    } else {
+      text = "You can continue to contact me";
+    }
+
+    document.getElementById("demo").innerHTML = text;
+  }
+  </script>
+
+
+    <form action="mailto:israh.emara@coderclass.nl" method="post" enctype="text/plain">
+      Name<br><input type="text" STYLE="color: white;       font-family: 'Didact Gothic', sans-serif;
+      font-size: 16px;"   class= name type="text" name="name" >
+      <br>
+      <br>
+      Last name<br>
+      <input type="text" STYLE="color: white;  font-family: 'Didact Gothic', sans-serif;
+      font-size: 16px;" class = last-name type="text" name=" last name" >
+      <br>
+      <br>
+      E-mail<br>
+      <input type="text"  STYLE="color: white;       font-family: 'Didact Gothic', sans-serif;
+      font-size: 16px;" class= email type="text" name="mail" value= >
+      <br>
+      <br>
+
+      Comment<br>
+
+      <input type="text"  STYLE="color: white;       font-family: 'Didact Gothic', sans-serif;
+      font-size: 16px;." class= comment type="text" name="comment" size="50"><br><br>
+
+      <a href="https://hetmml.nl/">
+      <img src="s.png"  class= "s"alt="h" >
+      </a>
+
+
+      <input class = submit type="submit" value="Send">
+      <input class= reset type="reset" value="Clear">
+    </form>
+  </article>
+  <div id = "iframe"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.4769617833717!2d4.915998315706065!3d52.36177097978457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609711f21356f%3A0x4698c2612bcb276b!2sMetis%20Montessori%20Lyceum!5e0!3m2!1snl!2snl!4v1573682398484!5m2!1snl!2snl" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<!---
+  <div class="box">
+    <img src="cloud-computing.png" alt="h" style="width:100%;" id="fb">
+  </div>
+  <div class="box">
+    <img src="hashtag.png" alt="h" style="width:100%;" id="insta">
+  </div>
+  <div class="box">
+    <img src="twitter.png" alt="h" style="width:100%;" id="twitter">
+  </div>
+
+</body>
+</html>
